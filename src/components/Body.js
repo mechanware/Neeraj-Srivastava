@@ -5,6 +5,7 @@ import PIC from '../images/Photo.jpg';
 import './Body.css'
 import SocialIcons from './SocialIcons' ;
 
+
 class Body extends Component {
     handleClick =()=>{
         window.open("https://docs.google.com/document/d/1Bm0-YqrafdRlPAEpHXwJ97Ro4bvDx-KQ/edit?usp=sharing&ouid=106088087997747305161&rtpof=true&sd=true");
