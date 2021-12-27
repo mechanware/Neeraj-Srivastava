@@ -39,7 +39,9 @@ const WeatherAPI = (props) => {
         axios.get('https://us1.locationiq.com/v1/reverse.php?key=pk.be5ee6d10f601be67453be0ffbf92ecd&lat=' +
             lat + '&lon=' + lng + '&format=json')
             .then(res => {
-                var city = res.data.address.city;
+                console.log(res);
+                //console.log(city);
+                var city = res.data.address.state_district;
                 var country=res.data.address.country
                 setCity(city+', '+country);
                 getTemperature(city);
@@ -74,7 +76,7 @@ const WeatherAPI = (props) => {
             <HiOutlineLocationMarker/> &nbsp;{city}<br/>
             <FaTemperatureHigh /> {temp} <br/>
             <WiHumidity /> {humidity} <br/>
-            <img style={{ height: "15px", width: "20px" }} src={wetherIcone} alt="weather" /> &nbsp;
+            <img style={{ height: "15px", width: "20px" }} src={wetherIcone} alt="" /> &nbsp;
             {wether}
             {weatherAvailable}
 
