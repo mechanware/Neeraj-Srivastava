@@ -15,6 +15,8 @@ class Header extends Component {
         var message='';
         isNoon?message='Good Afternoon !':message='Good Morning !';
         this.setState({welcomeMessage:message})
+        console.log(isNoon);
+        console.log(new Date().toLocaleString());
     }
    
 
