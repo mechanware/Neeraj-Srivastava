@@ -11,12 +11,16 @@ class Header extends Component {
         welcomeMessage:''
     }
     componentDidMount=()=>{
-        var isNoon = new Date().toLocaleString().endsWith("PM");
+        var hours = new Date().getHours();
         var message='';
-        isNoon?message='Good Afternoon !':message='Good Morning !';
+        if(hours>18 || hours==0){
+            message='Good Evening !';
+        }else if(hours>=12 && hours <=18){
+            message='Good Afternoon !';
+        }else{
+            message='Good Morning !';
+        }
         this.setState({welcomeMessage:message})
-        console.log(isNoon);
-        console.log(new Date().toLocaleString());
     }
    
 
@@ -44,7 +48,7 @@ class Header extends Component {
                     {this.state.welcomeMessage}
                 </div>
                 <div className='col' style={{ color: "white", paddingTop: "20px" }}>
-                    <AiOutlineHome />&nbsp; New Ashok Nagar, New Delhi<br />
+                    <AiOutlineHome />&nbsp; Mayur Vihar Extension, New Delhi<br />
                     <IoIosMail /> &nbsp; nrjsrivastav100@yahoo.com  <br />
                     <IoMdCall /> &nbsp; +91- 8284955191
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

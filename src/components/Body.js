@@ -8,7 +8,7 @@ import SocialIcons from './SocialIcons' ;
 
 class Body extends Component {
     handleClick =()=>{
-        window.open("https://docs.google.com/document/d/1Bm0-YqrafdRlPAEpHXwJ97Ro4bvDx-KQ/edit?usp=sharing&ouid=106088087997747305161&rtpof=true&sd=true");
+        window.open("https://drive.google.com/file/d/1GBp8iiQso10gushtpQOnFwJejv79l72m/view?usp=sharing");
     }
     render() {
         return (
@@ -37,7 +37,12 @@ class Body extends Component {
                                             </p>
                                             <p>
                                                 After around 2.5 years working with Infosys, I moved to <b>IBM India</b> in search of better opportunities.
-                                                And since August 2021, I am a Senior Software Engineer in IBM and currently working in a Project involving <i>Azure Cloud.</i> with Java and spring boot.
+                                                And from August 2021 to June 2022, I worked as a Senior Software Engineer in IBM and worked with Projects involving <i>Azure Cloud</i> along with Java and SpringBoot.
+                                            </p>
+                                            <p>
+                                                Currently, I am a part of <b>American Express India</b>. I work with Amex as Engineer II and am core into backend development.
+                                                I work here with tech stacks like, <i>GCP, GraphiQL APIs, SpringBoot, OpenTracing, etc.</i>
+                    
                                             </p>
                                             <b>I love tea and reading Spiritual & Mythological books.
                                                 I like listning & writing Nazms, Shayaris and Gazals.
