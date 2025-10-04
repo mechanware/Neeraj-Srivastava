@@ -8,7 +8,7 @@ import SocialIcons from './SocialIcons' ;
 
 class Body extends Component {
     handleClick =()=>{
-        window.open("https://drive.google.com/file/d/1GBp8iiQso10gushtpQOnFwJejv79l72m/view?usp=sharing");
+        window.open("https://drive.google.com/file/d/1vWcEeIQdAUuu4gYgGGE71htz0CKNFBWz/view?usp=drive_link");
     }
     render() {
         return (
